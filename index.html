@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
+<div class="tradingview-widget-container widget-contain">
   <div id="tradingview_27a3b"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
@@ -16,8 +16,6 @@
   new TradingView.widget(
   {
   "autosize": true,
-  "width": "auto",
-  "height": 2000,
   "symbol": "NASDAQ:AAPL",
   "interval": "D",
   "timezone": "Etc/UTC",
@@ -32,6 +30,9 @@
   );
   </script>
 </div>
+<style>
+  .widget-contain {height:600px;}
+</style>
 <!-- TradingView Widget END -->
 </body>
 </html>
